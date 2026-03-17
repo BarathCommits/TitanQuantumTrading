@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="titan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Quantum Trading | Where Data Meets Dominance</title>
+    <meta name="description" content="Titan Quantum Trading engineers alpha through precision, data, and disciplined execution across global equities, options, and digital asset markets.">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo" onclick="loadPage('home'); return false;">
+                <div class="nav-logo-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a0c10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                        <circle cx="12" cy="8" r="6"></circle>
+                    </svg>
+                </div>
+                <div class="nav-logo-text">
+                    <span>TITAN</span>
+                    <span>QUANTUM</span>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-page="home" onclick="loadPage('home'); return false;">Home</a>
+                <a href="#" class="nav-link" data-page="about" onclick="loadPage('about'); return false;">About</a>
+                <a href="#" class="nav-link" data-page="strategies" onclick="loadPage('strategies'); return false;">Strategies</a>
+            </div>
+            <a href="#" class="nav-cta" onclick="loadPage('about'); return false;">Get Started</a>
+            <button class="mobile-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 5h16"></path>
+                    <path d="M4 12h16"></path>
+                    <path d="M4 19h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#" onclick="loadPage('home'); toggleMobileMenu(); return false;">Home</a>
+        <a href="#" onclick="loadPage('about'); toggleMobileMenu(); return false;">About</a>
+        <a href="#" onclick="loadPage('strategies'); toggleMobileMenu(); return false;">Strategies</a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 7h6v6"></path>
+                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                            </svg>
+                            Institutional Trading Firm
+                        </div>
+                        <h1>Trade With <span class="gradient-text">Precision</span></h1>
+                        <p class="hero-tagline">Where Data Meets Dominance</p>
+                        <p class="hero-description">Titan Quantum Trading engineers alpha through precision, data, and disciplined execution across global markets. Join thousands of investors who trust our systematic approach.</p>
+                        <div class="hero-buttons">
+                            <a href="#" class="btn-primary" onclick="loadPage('about'); return false;">
+                                Start Trading
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn-secondary" onclick="loadPage('strategies'); return false;">View Strategies</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="hero-avatars">
+                                <div class="hero-avatar">SM</div>
+                                <div class="hero-avatar">JK</div>
+                                <div class="hero-avatar">ER</div>
+                            </div>
+                            <p class="hero-stat-text"><strong>2,400+</strong> traders worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <p class="stat-value">Dominate</p>
+                            <p class="stat-label">Volatility</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">Protect</p>
+                            <p class="stat-label">Capital</p>
+                        </div>
+                        <div class="stat-item">
+                            <p class="stat-value">Compound</p>
+                            <p class="stat-label">Intelligently</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Features Section -->
+            <section>
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Why Choose <span class="gradient-text">Titan Quantum</span></h2>
+                        <p>We combine cutting-edge technology with institutional-grade risk management to deliver consistent results.</p>
+                    </div>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                    <path d="M18 17V9"></path>
+                                    <path d="M13 17V5"></path>
+                                    <path d="M8 17v-3"></path>
+                                </svg>
+                            </div>
+                            <h3>Quantitative Intelligence</h3>
+                            <p>Research-first signal architecture designed for dynamic market regimes.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                </svg>
+                            </div>
+                            <h3>Advanced Risk Management</h3>
+                            <p>Portfolio-level controls that prioritize capital preservation across cycles.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h3>Strategic Positioning</h3>
+                            <p>Precision entries and exits across equities, options, and digital assets.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+                            </div>
+                            <h3>Global Market Access</h3>
+                            <p>Cross-venue execution calibrated for speed, liquidity, and consistency.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits Section -->
+            <section style="background: var(--bg-secondary);">
+                <div class="container">
+                    <div class="grid lg:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2>Institutional-Grade <span class="gradient-text">Trading Infrastructure</span></h2>
+                            <p class="mt-4">Our platform is built for serious traders who demand reliability, speed, and transparency.</p>
+                            <div class="mt-8">
+                                <div class="flex items-center gap-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34a853" stroke-width="2">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span>Institutional-grade execution</span>
+                                </div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34a853" stroke-width="2">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span>Real-time risk monitoring</span>
+                                </div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34a853" stroke-width="2">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span>Multi-asset coverage</span>
+                                </div>
+                                <div class="flex items-center gap-4 mb-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34a853" stroke-width="2">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span>Transparent reporting</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34a853" stroke-width="2">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span>Dedicated support team</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <h3>Live Market Data</h3>
+                            <p class="mt-4 text-muted">We deploy quantitative intelligence, advanced risk management, and strategic market positioning to capture opportunity in equities, options, and digital assets worldwide.</p>
+                            <div class="metrics-grid">
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Primary Markets</p>
+                                    <p class="metric-box-value">Equities | Options</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Execution Model</p>
+                                    <p class="metric-box-value">Systematic</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Risk Framework</p>
+                                    <p class="metric-box-value">Real-Time</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Performance</p>
+                                    <p class="metric-box-value">Verified</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section>
+                <div class="container">
+                    <div class="section-header">
+                        <h2>Trusted by <span class="gradient-text">Industry Leaders</span></h2>
+                    </div>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.123 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <p>"Titan Quantum's systematic approach has transformed our trading infrastructure."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">SM</div>
+                                <div>
+                                    <p class="testimonial-name">Sarah M.</p>
+                                    <p class="testimonial-role">Portfolio Manager</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <p>"Exceptional risk management and execution quality. A true partner in alpha generation."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">JK</div>
+                                <div>
+                                    <p class="testimonial-name">James K.</p>
+                                    <p class="testimonial-role">Hedge Fund Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>
+                            </div>
+                            <p>"The consistency of returns and transparency is what sets them apart."</p>
+                            <div class="testimonial-author">
+                                <div class="testimonial-avatar">ER</div>
+                                <div>
+                                    <p class="testimonial-name">Elena R.</p>
+                                    <p class="testimonial-role">Institutional Investor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section>
+                <div class="container">
+                    <div class="cta-section">
+                        <h2>Ready to <span class="gradient-text">Transform</span> Your Trading?</h2>
+                        <p>Join thousands of traders who have elevated their trading with Titan Quantum's institutional-grade infrastructure.</p>
+                        <div class="cta-buttons">
+                            <a href="#" class="btn-primary" onclick="loadPage('about'); return false;">Get Started Now</a>
+                            <a href="#" class="btn-secondary" onclick="loadPage('strategies'); return false;">View Strategies</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <div class="hero-badge">About Titan Quantum Trading</div>
+                    <h1>High-Performance <span class="gradient-text">Trading Discipline</span></h1>
+                    <p>Titan Quantum Trading is a high-performance trading firm operating across global equities, derivatives, and digital asset markets. At our core, we are a team of disciplined thinkers, relentless learners, and calculated risk-takers who believe markets reward preparation, patience, and precision. We combine quantitative intelligence with real-world market experience to navigate complexity and uncover opportunity across any environment.</p>
+                </div>
+
+                <div class="metrics-grid" style="max-width: 800px;">
+                    <div class="metric-box">
+                        <p class="metric-box-label">Market Coverage</p>
+                        <p class="metric-box-value">Global Equities</p>
+                    </div>
+                    <div class="metric-box">
+                        <p class="metric-box-label">Market Coverage</p>
+                        <p class="metric-box-value">Derivatives</p>
+                    </div>
+                    <div class="metric-box">
+                        <p class="metric-box-label">Market Coverage</p>
+                        <p class="metric-box-value">Digital Assets</p>
+                    </div>
+                </div>
+
+                <div class="mission-card">
+                    <h2>Mission Statement</h2>
+                    <p>Titan Quantum Trading exists to engineer alpha through precision, data, and disciplined execution across global markets.</p>
+                    <p class="mt-4">We deploy quantitative intelligence, advanced risk management, and strategic market positioning to capture opportunity in equities, options, and digital assets worldwide.</p>
+                    <p class="mt-6" style="font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.85rem;">Our mission is simple:</p>
+                    <ul class="mission-points">
+                        <li>Dominate volatility.</li>
+                        <li>Protect capital.</li>
+                        <li>Compound intelligently.</li>
+                    </ul>
+                </div>
+
+                <div class="section-header">
+                    <h2>Our Operating <span class="gradient-text">Edge</span></h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                <path d="M18 17V9"></path>
+                                <path d="M13 17V5"></path>
+                                <path d="M8 17v-3"></path>
+                            </svg>
+                        </div>
+                        <h3>Quantitative Intelligence</h3>
+                        <p>Signal generation and portfolio construction informed by research and empirical testing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                            </svg>
+                        </div>
+                        <h3>Risk Discipline</h3>
+                        <p>Every position is measured through scenario analysis, sizing controls, and downside protection.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Strategic Positioning</h3>
+                        <p>Execution frameworks designed to capture opportunity without compromising capital quality.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                        </div>
+                        <h3>Global Coverage</h3>
+                        <p>Mandates deployed across regions and time zones to maintain a diversified opportunity set.</p>
+                    </div>
+                </div>
+
+                <div class="cta-section mt-16">
+                    <p style="font-size: 1.25rem; color: var(--text-primary);">Every trade reflects research. Every decision respects risk. Every strategy is built for long-term performance.</p>
+                    <p class="mt-4" style="font-size: 1.5rem; font-weight: 600; color: var(--accent-primary);">Built on data. Driven by edge. Guided by discipline.</p>
+                    <div class="cta-buttons mt-8">
+                        <a href="#" class="btn-primary" onclick="loadPage('strategies'); return false;">Explore Strategies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategies Page -->
+        <div id="strategies" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <div class="hero-badge">Our Strategies</div>
+                    <h1>Systematic <span class="gradient-text">Alpha</span> Strategies</h1>
+                    <p>Three distinct approaches. One unified mandate: asymmetric returns with institutional-grade risk management. Each strategy is designed to deliver consistent performance across varying market conditions.</p>
+                </div>
+
+                <!-- Strategy 1: Options Trading -->
+                <div class="strategy-card">
+                    <div class="strategy-card-grid">
+                        <div class="strategy-content">
+                            <div class="strategy-header">
+                                <div>
+                                    <h3 style="font-size: 1.75rem;">Options Trading</h3>
+                                    <p class="mt-2" style="color: var(--accent-primary);">Strategic options strategies for income and growth</p>
+                                </div>
+                                <div class="strategy-status">Active</div>
+                            </div>
+                            <p>Our options trading approach combines technical analysis, volatility modeling, and risk-defined strategies to generate consistent returns. We focus on high-probability setups with defined risk, including credit spreads, iron condors, and covered calls.</p>
+                            <div class="strategy-features">
+                                <div class="strategy-feature">High-probability credit spreads</div>
+                                <div class="strategy-feature">Volatility-based position sizing</div>
+                                <div class="strategy-feature">Delta-neutral strategies</div>
+                                <div class="strategy-feature">Pre-earnings volatility plays</div>
+                            </div>
+                            <div class="metrics-grid">
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Capacity</p>
+                                    <p class="metric-box-value">Flexible</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Instruments</p>
+                                    <p class="metric-box-value">Equity Options</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Holding Period</p>
+                                    <p class="metric-box-value">3-30 days</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Volatility</p>
+                                    <p class="metric-box-value">Medium</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategy-sidebar">
+                            <h4 style="margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Performance</h4>
+                            <div class="performance-grid">
+                                <div class="performance-item">
+                                    <span class="performance-label">Annual Return</span>
+                                    <span class="performance-value positive">22-35%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Win Rate</span>
+                                    <span class="performance-value positive">68%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Max Drawdown</span>
+                                    <span class="performance-value negative">-12%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Sharpe Ratio</span>
+                                    <span class="performance-value positive">1.6</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 2: Technical Analysis -->
+                <div class="strategy-card">
+                    <div class="strategy-card-grid">
+                        <div class="strategy-content">
+                            <div class="strategy-header">
+                                <div>
+                                    <h3 style="font-size: 1.75rem;">Technical Analysis</h3>
+                                    <p class="mt-2" style="color: var(--accent-primary);">Data-driven signals based on price action and momentum</p>
+                                </div>
+                                <div class="strategy-status">Active</div>
+                            </div>
+                            <p>Our technical strategy uses advanced pattern recognition, momentum indicators, and multi-timeframe analysis to identify high-conviction trading opportunities. We combine traditional technical analysis with machine learning to filter signals and improve accuracy.</p>
+                            <div class="strategy-features">
+                                <div class="strategy-feature">Multi-timeframe confluence</div>
+                                <div class="strategy-feature">Machine learning signal enhancement</div>
+                                <div class="strategy-feature">Volume profile analysis</div>
+                                <div class="strategy-feature">Support/resistance automation</div>
+                            </div>
+                            <div class="metrics-grid">
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Capacity</p>
+                                    <p class="metric-box-value">Unlimited</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Instruments</p>
+                                    <p class="metric-box-value">Stocks, ETFs</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Holding Period</p>
+                                    <p class="metric-box-value">1-20 days</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Volatility</p>
+                                    <p class="metric-box-value">Medium-High</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategy-sidebar">
+                            <h4 style="margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Performance</h4>
+                            <div class="performance-grid">
+                                <div class="performance-item">
+                                    <span class="performance-label">Annual Return</span>
+                                    <span class="performance-value positive">18-28%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Sharpe Ratio</span>
+                                    <span class="performance-value positive">1.8</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Max Drawdown</span>
+                                    <span class="performance-value negative">-15%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Win Rate</span>
+                                    <span class="performance-value positive">55%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategy 3: Fundamental Analysis -->
+                <div class="strategy-card">
+                    <div class="strategy-card-grid">
+                        <div class="strategy-content">
+                            <div class="strategy-header">
+                                <div>
+                                    <h3 style="font-size: 1.75rem;">Fundamental Analysis</h3>
+                                    <p class="mt-2" style="color: var(--accent-primary);">Long-term value investing with tactical overlays</p>
+                                </div>
+                                <div class="strategy-status">Active</div>
+                            </div>
+                            <p>Our fundamental strategy focuses on identifying undervalued companies with strong competitive moats and growth potential. We combine deep financial analysis with qualitative factors to build concentrated portfolios for long-term wealth creation.</p>
+                            <div class="strategy-features">
+                                <div class="strategy-feature">Discounted cash flow analysis</div>
+                                <div class="strategy-feature">Competitive moat assessment</div>
+                                <div class="strategy-feature">Management quality evaluation</div>
+                                <div class="strategy-feature">Sector rotation tactics</div>
+                            </div>
+                            <div class="metrics-grid">
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Capacity</p>
+                                    <p class="metric-box-value">$10M+</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Instruments</p>
+                                    <p class="metric-box-value">Stocks, ADRs</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Holding Period</p>
+                                    <p class="metric-box-value">3-12 months</p>
+                                </div>
+                                <div class="metric-box">
+                                    <p class="metric-box-label">Volatility</p>
+                                    <p class="metric-box-value">Medium</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="strategy-sidebar">
+                            <h4 style="margin-bottom: 20px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Performance</h4>
+                            <div class="performance-grid">
+                                <div class="performance-item">
+                                    <span class="performance-label">Annual Return</span>
+                                    <span class="performance-value positive">15-22%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Sharpe Ratio</span>
+                                    <span class="performance-value positive">1.2</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Max Drawdown</span>
+                                    <span class="performance-value negative">-18%</span>
+                                </div>
+                                <div class="performance-item">
+                                    <span class="performance-label">Alpha</span>
+                                    <span class="performance-value positive">+8%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process Section -->
+                <div class="section-header mt-16">
+                    <h2>Our <span class="gradient-text">Process</span></h2>
+                </div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-number">01</div>
+                        <h3>Research</h3>
+                        <p>Rigorous quantitative research using historical data and forward testing.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">02</div>
+                        <h3>Development</h3>
+                        <p>Strategy implementation with robust risk controls and execution logic.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">03</div>
+                        <h3>Testing</h3>
+                        <p>Extensive backtesting, paper trading, and stress testing.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">04</div>
+                        <h3>Deployment</h3>
+                        <p>Careful capital allocation with continuous monitoring and optimization.</p>
+                    </div>
+                </div>
+
+                <!-- Risk Disclaimer -->
+                <div class="risk-box">
+                    <div class="risk-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h4>Risk Disclosure</h4>
+                        <p>Past performance is not indicative of future results. All investments involve risk, including the possible loss of principal. The strategies described above are speculative and may not be suitable for all investors. Please review our Risk Disclosure Statement for complete information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo" onclick="loadPage('home'); return false;">
+                        <div class="nav-logo-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0a0c10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                                <circle cx="12" cy="8" r="6"></circle>
+                            </svg>
+                        </div>
+                        <div class="nav-logo-text">
+                            <span>TITAN</span>
+                            <span>QUANTUM</span>
+                        </div>
+                    </a>
+                    <p>Titan Quantum Trading engineers alpha through precision, data, and disciplined execution across global markets.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" onclick="loadPage('about'); return false;">About Us</a></li>
+                        <li><a href="#" onclick="loadPage('strategies'); return false;">Strategies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Titan Quantum Trading. All rights reserved.</p>
+                <p>Past performance does not guarantee future results. Trading involves risk.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
