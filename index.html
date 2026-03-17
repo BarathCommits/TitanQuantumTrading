@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="titan">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan Quantum Trading | Where Data Meets Dominance</title>
+    <meta name="description" content="Titan Quantum Trading engineers alpha through precision, data, and disciplined execution across global equities, options, and digital asset markets.">
+    <link rel="icon" href="favicon.ico" sizes="256x256" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 border-b border-themed bg-primary/95 backdrop-blur-xl">
+        <div class="hidden border-b border-themed bg-secondary/50 py-2 lg:block">
+            <div class="mx-auto flex max-w-screen-2xl items-center justify-center gap-12 px-6">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                        <path d="M16 7h6v6"></path>
+                        <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                    </svg>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-text-secondary">Dominate volatility</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                    </svg>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-text-secondary">Protect capital</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                        <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-text-secondary">Compound intelligently</span>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto max-w-screen-2xl px-6 py-4 md:px-8">
+            <div class="flex items-center justify-between">
+                <a class="group flex items-center gap-3 nav-link active" href="/">
+                    <div class="flex size-11 items-center justify-center rounded-lg bg-gradient-to-br from-accent-primary to-accent-secondary text-base font-bold text-white shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+                            <circle cx="12" cy="8" r="6"></circle>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="block text-sm font-bold tracking-[0.12em] text-text-primary leading-tight">TITAN</span>
+                        <span class="block text-sm font-bold tracking-[0.12em] text-text-primary leading-tight">QUANTUM</span>
+                        <span class="block text-sm font-bold tracking-[0.12em] text-text-primary leading-tight">TRADING</span>
+                    </div>
+                </a>
+                <div class="hidden lg:flex items-center gap-12">
+                    <a class="nav-link active px-6 py-3 rounded-lg bg-bg-tertiary" href="/" data-page="home" onclick="loadPage('home'); return false;">Home</a>
+                    <a class="nav-link px-6 py-3 rounded-lg bg-bg-tertiary" href="/about" data-page="about" onclick="loadPage('about'); return false;">About</a>
+                    <a class="nav-link px-6 py-3 rounded-lg bg-bg-tertiary" href="/strategies" data-page="strategies" onclick="loadPage('strategies'); return false;">Strategies</a>
+                </div>
+                <div class="hidden lg:flex items-center gap-4">
+                    <a class="btn-primary" href="/about">Get Started</a>
+                </div>
+                <button id="mobileMenuBtn" class="rounded-md border border-themed p-2 text-text-primary lg:hidden" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 5h16"></path>
+                        <path d="M4 12h16"></path>
+                        <path d="M4 19h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+                <div id="mobileMenu" class="mobile-menu border-t border-themed bg-primary lg:hidden">
+                    <div class="mx-auto max-w-screen-2xl space-y-2 px-6 py-5 md:px-8">
+                        <a class="block py-3 text-sm font-semibold uppercase tracking-[0.12em] text-accent" href="/" onclick="loadPage('home'); return false;">Home</a>
+                        <a class="block py-3 text-sm font-semibold uppercase tracking-[0.12em] text-text-primary" href="/about" onclick="loadPage('about'); return false;">About</a>
+                        <a class="block py-3 text-sm font-semibold uppercase tracking-[0.12em] text-text-primary" href="/strategies" onclick="loadPage('strategies'); return false;">Strategies</a>
+                <div class="pt-2">
+                    <a class="btn-primary w-full justify-center" href="/about">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="pt-[130px]">
+        <!-- Home Page -->
+        <div id="home" class="min-h-screen">
+            <!-- Ticker tape -->
+            <div class="border-b border-themed bg-secondary/50 overflow-hidden py-3">
+                <div id="tickerTape" class="ticker-tape flex">
+                    <!-- Ticker data will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <section class="relative min-h-screen overflow-hidden pb-20 pt-36">
+                <div class="container">
+                    <div class="grid gap-14 lg:grid-cols-2 lg:gap-20">
+                        <div class="flex flex-col justify-center animate-fade-in-up">
+                            <div class="mb-6 inline-flex items-center gap-2 badge badge-success w-fit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <path d="M16 7h6v6"></path>
+                                    <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                </svg>
+                                <span>Institutional Trading Firm</span>
+                            </div>
+                            <h1 class="text-5xl font-extrabold leading-[0.98] text-text-primary md:text-6xl lg:text-7xl">
+                                TRADE WITH
+                                <br />
+                                <span class="gradient-text">PRECISION</span>
+                            </h1>
+                            <p class="mt-6 max-w-2xl text-xl text-text-secondary md:text-2xl">
+                                Where Data Meets Dominance
+                            </p>
+                            <p class="mt-6 max-w-2xl text-lg leading-relaxed text-muted">
+                                Titan Quantum Trading engineers alpha through precision, data, and disciplined execution
+                                across global markets. Join thousands of investors who trust our systematic approach.
+                            </p>
+                            <div class="mt-10 flex flex-wrap gap-4">
+                                <a class="btn-primary" href="/about">
+                                    Start Trading <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                                <a class="btn-secondary" href="/strategies">
+                                    View Strategies
+                                </a>
+                            </div>
+                            <div class="mt-12 flex items-center gap-8">
+                                <div class="flex -space-x-3">
+                                    <div class="social-proof-avatar border-2 border-primary">SM</div>
+                                    <div class="social-proof-avatar border-2 border-primary">JK</div>
+                                    <div class="social-proof-avatar border-2 border-primary">ER</div>
+                                </div>
+                                <div class="social-proof-text">
+                                    <span class="font-semibold text-text-primary">2,400+</span> traders worldwide
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card p-8 md:p-10 animate-fade-in-right">
+                            <h2 class="text-3xl text-text-primary">Global Market Mandate</h2>
+                            <p class="mt-4 text-sm leading-relaxed text-muted">
+                                We deploy quantitative intelligence, advanced risk management, and strategic market positioning to
+                                capture opportunity in equities, options, and digital assets worldwide.
+                            </p>
+
+                            <div class="mt-8 space-y-4">
+                                <div class="rounded-xl border border-themed bg-bg-tertiary p-4">
+                                    <p class="text-xs uppercase tracking-[0.15em] text-muted">Primary Markets</p>
+                                    <p class="mt-2 text-sm font-semibold text-text-primary">Equities | Options | Digital Assets</p>
+                                </div>
+                                <div class="rounded-xl border border-themed bg-bg-tertiary p-4">
+                                    <p class="text-xs uppercase tracking-[0.15em] text-muted">Execution Model</p>
+                                    <p class="mt-2 text-sm font-semibold text-text-primary">Systematic + Discretionary Overlay</p>
+                                </div>
+                                <div class="rounded-xl border border-themed bg-bg-tertiary p-4">
+                                    <p class="text-xs uppercase tracking-[0.15em] text-muted">Risk Framework</p>
+                                    <p class="mt-2 text-sm font-semibold text-text-primary">Real-Time Multi-Layer Controls</p>
+                                </div>
+                            </div>
+
+                            <div class="mt-8 flex items-center justify-between border-t border-themed pt-6">
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-positive">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">Verified Performance</span>
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                        <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="section bg-secondary">
+                <div class="container">
+                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div class="stat-card animate-fade-in-up">
+                            <div class="stat-card-value">Dominate volatility</div>
+                            <div class="stat-card-label"></div>
+                        </div>
+                        <div class="stat-card animate-fade-in-up">
+                            <div class="stat-card-value">Protect capital</div>
+                            <div class="stat-card-label"></div>
+                        </div>
+                        <div class="stat-card animate-fade-in-up">
+                            <div class="stat-card-value">Compound intelligently</div>
+                            <div class="stat-card-label"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="text-center mb-14 animate-fade-in-up">
+                        <h2 class="text-4xl font-bold text-text-primary md:text-5xl">
+                            Why Choose <span class="gradient-text">Titan Quantum</span>
+                        </h2>
+                        <p class="mt-4 text-lg text-muted max-w-2xl mx-auto">
+                            We combine cutting-edge technology with institutional-grade risk management to deliver consistent results.
+                        </p>
+                    </div>
+
+                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div class="feature-card animate-fade-in-up">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                    <path d="M18 17V9"></path>
+                                    <path d="M13 17V5"></path>
+                                    <path d="M8 17v-3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-text-primary">Quantitative Intelligence</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Research-first signal architecture designed for dynamic market regimes.</p>
+                            <div class="mt-6 flex items-center gap-2 text-accent">
+                                <span class="text-sm font-semibold">Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-card animate-fade-in-up">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-text-primary">Advanced Risk Management</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Portfolio-level controls that prioritize capital preservation across cycles.</p>
+                            <div class="mt-6 flex items-center gap-2 text-accent">
+                                <span class="text-sm font-semibold">Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-card animate-fade-in-up">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-text-primary">Strategic Positioning</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Precision entries and exits across equities, options, and digital assets.</p>
+                            <div class="mt-6 flex items-center gap-2 text-accent">
+                                <span class="text-sm font-semibold">Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="feature-card animate-fade-in-up">
+                            <div class="feature-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-text-primary">Global Market Access</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Cross-venue execution calibrated for speed, liquidity, and consistency.</p>
+                            <div class="mt-6 flex items-center gap-2 text-accent">
+                                <span class="text-sm font-semibold">Learn more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="m9 18 6-6-6-6"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Benefits Section -->
+            <section class="section bg-secondary">
+                <div class="container">
+                    <div class="grid gap-12 lg:grid-cols-2 items-center">
+                        <div class="animate-fade-in-left">
+                            <h2 class="text-4xl font-bold text-text-primary md:text-5xl">
+                                Institutional-Grade <span class="gradient-text">Trading Infrastructure</span>
+                            </h2>
+                            <p class="mt-6 text-lg text-muted">
+                                Our platform is built for serious traders who demand reliability, speed, and transparency.
+                            </p>
+                            <div class="mt-8 grid gap-3">
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-positive">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span class="text-text-primary">Institutional-grade execution</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-positive">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span class="text-text-primary">Real-time risk monitoring</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-positive">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span class="text-text-primary">Multi-asset coverage</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-positive">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span class="text-text-primary">Transparent reporting</span>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-positive">
+                                        <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
+                                        <path d="m9 11 3 3L22 4"></path>
+                                    </svg>
+                                    <span class="text-text-primary">Dedicated support team</span>
+                                </div>
+                            </div>
+                            <div class="mt-10">
+                                <a class="btn-primary" href="/about">
+                                    Get Started Today <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card p-8 animate-fade-in-right">
+                            <h3 class="text-2xl font-bold text-text-primary mb-6">Live Market Data</h3>
+                            <div id="liveMarketData" class="space-y-4">
+                                <!-- Live market data will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="section">
+                <div class="container">
+                    <div class="text-center mb-14 animate-fade-in-up">
+                        <h2 class="text-4xl font-bold text-text-primary md:text-5xl">
+                            Trusted by <span class="gradient-text">Industry Leaders</span>
+                        </h2>
+                    </div>
+
+                    <div class="grid gap-6 md:grid-cols-3">
+                        <div class="card p-7 animate-fade-in-up">
+                            <div class="flex items-center gap-1 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-text-primary leading-relaxed">“Titan Quantum's systematic approach has transformed our trading infrastructure.”</p>
+                            <div class="mt-6 flex items-center gap-3">
+                                <div class="social-proof-avatar">SM</div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Sarah M.</div>
+                                    <div class="text-xs text-muted">Portfolio Manager</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-7 animate-fade-in-up">
+                            <div class="flex items-center gap-1 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-text-primary leading-relaxed">“Exceptional risk management and execution quality. A true partner in alpha generation.”</p>
+                            <div class="mt-6 flex items-center gap-3">
+                                <div class="social-proof-avatar">JK</div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">James K.</div>
+                                    <div class="text-xs text-muted">Hedge Fund Director</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-7 animate-fade-in-up">
+                            <div class="flex items-center gap-1 mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fill-accent text-accent">
+                                    <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
+                                </svg>
+                            </div>
+                            <p class="text-text-primary leading-relaxed">“The consistency of returns and transparency is what sets them apart.”</p>
+                            <div class="mt-6 flex items-center gap-3">
+                                <div class="social-proof-avatar">ER</div>
+                                <div>
+                                    <div class="font-semibold text-text-primary">Elena R.</div>
+                                    <div class="text-xs text-muted">Institutional Investor</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="section pb-24">
+                <div class="container">
+                    <div class="cta-section animate-fade-in-up">
+                        <h2 class="text-4xl font-bold text-text-primary md:text-5xl relative z-10">
+                            Ready to <span class="gradient-text">Transform</span> Your Trading?
+                        </h2>
+                        <p class="mt-6 text-lg text-muted max-w-2xl mx-auto relative z-10">
+                            Join thousands of traders who have elevated their trading with Titan Quantum's institutional-grade infrastructure.
+                        </p>
+                        <div class="mt-10 flex flex-wrap gap-4 justify-center relative z-10">
+                            <a class="btn-primary" href="/about">
+                                Get Started Now <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14"></path>
+                                    <path d="m12 5 7 7-7 7"></path>
+                                </svg>
+                            </a>
+                            <a class="btn-secondary" href="/strategies">
+                                View Strategies
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="min-h-screen pb-24 pt-34" style="display: none;">
+            <div class="container">
+                <div class="animate-fade-in-up">
+                    <div class="mb-6 inline-flex items-center gap-2 badge badge-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                        <span>About Titan Quantum Trading</span>
+                    </div>
+
+                    <h1 class="text-5xl text-text-primary md:text-6xl lg:text-7xl">
+                        High-Performance
+                        <span class="gradient-text"> Trading Discipline</span>
+                    </h1>
+
+                    <p class="mt-8 max-w-4xl text-lg leading-relaxed text-muted">
+                        Titan Quantum Trading is a high-performance trading firm operating across global equities, derivatives,
+                        and digital asset markets.
+                    </p>
+                    <p class="mt-5 max-w-4xl text-lg leading-relaxed text-muted">
+                        At our core, we are a team of disciplined thinkers, relentless learners, and calculated risk-takers who
+                        believe markets reward preparation, patience, and precision. We combine quantitative intelligence with
+                        real-world market experience to navigate complexity and uncover opportunity across any environment.
+                    </p>
+                </div>
+
+                <div class="mt-14 grid gap-6 md:grid-cols-3 animate-fade-in-up">
+                    <div class="metric-card text-center">
+                        <p class="text-xs uppercase tracking-[0.15em] text-muted">Market Coverage</p>
+                        <p class="mt-3 text-xl text-text-primary">Global Equities</p>
+                    </div>
+                    <div class="metric-card text-center">
+                        <p class="text-xs uppercase tracking-[0.15em] text-muted">Market Coverage</p>
+                        <p class="mt-3 text-xl text-text-primary">Derivatives</p>
+                    </div>
+                    <div class="metric-card text-center">
+                        <p class="text-xs uppercase tracking-[0.15em] text-muted">Market Coverage</p>
+                        <p class="mt-3 text-xl text-text-primary">Digital Assets</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 card p-8 md:p-12 animate-fade-in-up">
+                    <h2 class="text-4xl text-text-primary md:text-5xl">Mission Statement</h2>
+                    <p class="mt-6 text-lg leading-relaxed text-muted">
+                        Titan Quantum Trading exists to engineer alpha through precision, data, and disciplined execution across
+                        global markets.
+                    </p>
+                    <p class="mt-4 text-lg leading-relaxed text-muted">
+                        We deploy quantitative intelligence, advanced risk management, and strategic market positioning to capture
+                        opportunity in equities, options, and digital assets worldwide.
+                    </p>
+                    <p class="mt-8 text-sm font-semibold uppercase tracking-[0.16em] text-text-secondary">
+                        Our mission is simple:
+                    </p>
+                    <div class="mt-4 space-y-3 text-lg text-text-primary">
+                        <p>Dominate volatility.</p>
+                        <p>Protect capital.</p>
+                        <p>Compound intelligently.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 animate-fade-in-up">
+                    <h2 class="text-center text-4xl text-text-primary md:text-5xl">
+                        Our Operating <span class="gradient-text">Edge</span>
+                    </h2>
+                    <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                        <div class="card p-7">
+                            <div class="mb-5 flex size-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                                    <path d="M18 17V9"></path>
+                                    <path d="M13 17V5"></path>
+                                    <path d="M8 17v-3"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl text-text-primary">Quantitative Intelligence</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Signal generation and portfolio construction informed by research and empirical testing.</p>
+                        </div>
+                        <div class="card p-7">
+                            <div class="mb-5 flex size-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl text-text-primary">Risk Discipline</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Every position is measured through scenario analysis, sizing controls, and downside protection.</p>
+                        </div>
+                        <div class="card p-7">
+                            <div class="mb-5 flex size-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="12" r="6"></circle>
+                                    <circle cx="12" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl text-text-primary">Strategic Positioning</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Execution frameworks designed to capture opportunity without compromising capital quality.</p>
+                        </div>
+                        <div class="card p-7">
+                            <div class="mb-5 flex size-12 items-center justify-center rounded-lg bg-accent/10">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                    <path d="M2 12h20"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl text-text-primary">Global Coverage</h3>
+                            <p class="mt-3 text-sm leading-relaxed text-muted">Mandates deployed across regions and time zones to maintain a diversified opportunity set.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 card p-8 text-center md:p-12 animate-fade-in-up">
+                    <p class="text-xl text-text-primary">Every trade reflects research.</p>
+                    <p class="mt-3 text-xl text-text-primary">Every decision respects risk.</p>
+                    <p class="mt-3 text-xl text-text-primary">Every strategy is built for long-term performance.</p>
+                    <p class="mt-8 text-2xl font-semibold text-accent">
+                        Built on data. Driven by edge. Guided by discipline.
+                    </p>
+                    <div class="mt-10">
+                        <a class="btn-primary" href="/strategies">
+                            Explore Strategies <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"></path>
+                                <path d="m12 5 7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategies Page -->
+        <div id="strategies" class="min-h-screen pt-36 pb-24" style="display: none;">
+            <div class="container">
+                <!-- Header -->
+                <div class="animate-fade-in-up">
+                    <div class="inline-flex items-center gap-2 badge badge-success mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                            <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
+                            <path d="M18 17V9"></path>
+                            <path d="M13 17V5"></path>
+                            <path d="M8 17v-3"></path>
+                        </svg>
+                        <span>Our Strategies</span>
+                    </div>
+
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6">
+                        Systematic <span class="gradient-text">Alpha</span> Strategies
+                    </h1>
+
+                    <p class="text-xl text-muted max-w-3xl leading-relaxed mb-16">
+                        Three distinct approaches. One unified mandate: asymmetric returns with institutional-grade risk management. Each strategy is designed to deliver consistent performance across varying market conditions.
+                    </p>
+                </div>
+
+                <!-- Strategy Cards -->
+                <div class="space-y-8">
+                    <!-- Options Trading -->
+                    <div class="card overflow-hidden animate-fade-in-up">
+                        <div class="grid lg:grid-cols-3">
+                            <!-- Left: Main Content -->
+                            <div class="lg:col-span-2 p-8 md:p-10">
+                                <div class="flex items-start justify-between gap-4 mb-6">
+                                    <div>
+                                        <h3 class="text-3xl font-bold text-text-primary">Options Trading</h3>
+                                        <p class="text-accent mt-2 font-medium">Strategic options strategies for income and growth</p>
+                                    </div>
+                                    <div class="hidden md:flex items-center gap-2 text-sm text-muted">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                        </svg>
+                                        <span>Active</span>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted leading-relaxed mb-8">
+                                    Our options trading approach combines technical analysis, volatility modeling, and risk-defined strategies to generate consistent returns. We focus on high-probability setups with defined risk, including credit spreads, iron condors, and covered calls.
+                                </p>
+
+                                <!-- Features -->
+                                <div class="mb-8">
+                                    <h4 class="text-sm font-semibold text-text-primary uppercase tracking-wider mb-4">Key Features</h4>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">High-probability credit spreads</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Volatility-based position sizing</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Delta-neutral strategies</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Pre-earnings volatility plays</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Strategy Details -->
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <div class="bg-bg-tertiary rounded-lg p-4">
+                                        <div class="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                                <path d="M2 12h20"></path>
+                                            </svg>
+                                            <span className="text-xs">Capacity</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold">Flexible</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                            </svg>
+                                            <span className="text-xs">Instruments</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold text-sm">Equity Options, ETF Options</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                            <span className="text-xs">Holding Period</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold text-sm">3-30 days</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M16 7h6v6"></path>
+                                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                            </svg>
+                                            <span className="text-xs">Volatility</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold">Medium</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Metrics -->
+                            <div className="bg-bg-tertiary p-8 md:p-10 border-t lg:border-t-0 lg:border-l border-themed">
+                                <h4 className="text-sm font-semibold text-text-primary uppercase tracking-wider mb-6">Performance</h4>
+                                <div className="space-y-4">
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Annual Return</span>
+                                        <span className="font-bold text-lg text-positive">22-35%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Win Rate</span>
+                                        <span className="font-bold text-lg text-positive">68%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Max Drawdown</span>
+                                        <span className="font-bold text-lg text-negative">-12%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Holding Period</span>
+                                        <span className="font-bold text-lg text-positive">3-30 days</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Analysis -->
+                    <div class="card overflow-hidden animate-fade-in-up">
+                        <div class="grid lg:grid-cols-3">
+                            <!-- Left: Main Content -->
+                            <div class="lg:col-span-2 p-8 md:p-10">
+                                <div class="flex items-start justify-between gap-4 mb-6">
+                                    <div>
+                                        <h3 class="text-3xl font-bold text-text-primary">Technical Analysis</h3>
+                                        <p class="text-accent mt-2 font-medium">Data-driven signals based on price action and momentum</p>
+                                    </div>
+                                    <div class="hidden md:flex items-center gap-2 text-sm text-muted">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                        </svg>
+                                        <span>Active</span>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted leading-relaxed mb-8">
+                                    Our technical strategy uses advanced pattern recognition, momentum indicators, and multi-timeframe analysis to identify high-conviction trading opportunities. We combine traditional technical analysis with machine learning to filter signals and improve accuracy.
+                                </p>
+
+                                <!-- Features -->
+                                <div class="mb-8">
+                                    <h4 class="text-sm font-semibold text-text-primary uppercase tracking-wider mb-4">Key Features</h4>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Multi-timeframe confluence</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Machine learning signal enhancement</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Volume profile analysis</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Support/resistance automation</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Strategy Details -->
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <div class="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                                <path d="M2 12h20"></path>
+                                            </svg>
+                                            <span className="text-xs">Capacity</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold">Unlimited</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                            </svg>
+                                            <span className="text-xs">Instruments</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold text-sm">Stocks, ETFs, Futures</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                            <span className="text-xs">Holding Period</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold text-sm">1-20 days</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M16 7h6v6"></path>
+                                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                            </svg>
+                                            <span className="text-xs">Volatility</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold">Medium-High</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Metrics -->
+                            <div className="bg-bg-tertiary p-8 md:p-10 border-t lg:border-t-0 lg:border-l border-themed">
+                                <h4 className="text-sm font-semibold text-text-primary uppercase tracking-wider mb-6">Performance</h4>
+                                <div className="space-y-4">
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Annual Return</span>
+                                        <span className="font-bold text-lg text-positive">18-28%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Sharpe Ratio</span>
+                                        <span className="font-bold text-lg text-positive">1.8</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Max Drawdown</span>
+                                        <span className="font-bold text-lg text-negative">-15%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Win Rate</span>
+                                        <span className="font-bold text-lg text-positive">55%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fundamental Analysis -->
+                    <div class="card overflow-hidden animate-fade-in-up">
+                        <div class="grid lg:grid-cols-3">
+                            <!-- Left: Main Content -->
+                            <div class="lg:col-span-2 p-8 md:p-10">
+                                <div class="flex items-start justify-between gap-4 mb-6">
+                                    <div>
+                                        <h3 class="text-3xl font-bold text-text-primary">Fundamental Analysis</h3>
+                                        <p class="text-accent mt-2 font-medium">Long-term value investing with tactical overlays</p>
+                                    </div>
+                                    <div class="hidden md:flex items-center gap-2 text-sm text-muted">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                                        </svg>
+                                        <span>Active</span>
+                                    </div>
+                                </div>
+
+                                <p class="text-muted leading-relaxed mb-8">
+                                    Our fundamental strategy focuses on identifying undervalued companies with strong competitive moats and growth potential. We combine deep financial analysis with qualitative factors to build concentrated portfolios for long-term wealth creation.
+                                </p>
+
+                                <!-- Features -->
+                                <div class="mb-8">
+                                    <h4 class="text-sm font-semibold text-text-primary uppercase tracking-wider mb-4">Key Features</h4>
+                                    <div class="grid sm:grid-cols-2 gap-3">
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Discounted cash flow analysis</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Competitive moat assessment</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Management quality evaluation</span>
+                                        </div>
+                                        <div class="flex items-center gap-3 text-muted">
+                                            <div class="w-1.5 h-1.5 rounded-full bg-accent" />
+                                            <span class="text-sm">Sector rotation tactics</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Strategy Details -->
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                                <path d="M2 12h20"></path>
+                                            </svg>
+                                            <span className="text-xs">Capacity</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold">$10M+</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                                            </svg>
+                                            <span className="text-xs">Instruments</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold text-sm">Stocks, ADRs, ETFs</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <circle cx="12" cy="12" r="10"></circle>
+                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                            </svg>
+                                            <span className="text-xs">Holding Period</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold text-sm">3-12 months</div>
+                                    </div>
+                                    <div className="bg-bg-tertiary rounded-lg p-4">
+                                        <div className="flex items-center gap-2 text-muted mb-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <path d="M16 7h6v6"></path>
+                                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                                            </svg>
+                                            <span className="text-xs">Volatility</span>
+                                        </div>
+                                        <div className="text-text-primary font-semibold">Medium</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Right: Metrics -->
+                            <div className="bg-bg-tertiary p-8 md:p-10 border-t lg:border-t-0 lg:border-l border-themed">
+                                <h4 className="text-sm font-semibold text-text-primary uppercase tracking-wider mb-6">Performance</h4>
+                                <div className="space-y-4">
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Annual Return</span>
+                                        <span className="font-bold text-lg text-positive">15-22%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Sharpe Ratio</span>
+                                        <span className="font-bold text-lg text-positive">1.2</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Max Drawdown</span>
+                                        <span className="font-bold text-lg text-negative">-18%</span>
+                                    </div>
+                                    <div className="flex items-center justify-between">
+                                        <span className="text-muted text-sm">Holding Period</span>
+                                        <span className="font-bold text-lg text-positive">3-12 months</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Process Section -->
+                <div className="mt-24 animate-fade-in-up">
+                    <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-12 text-center">
+                        Our <span className="gradient-text">Process</span>
+                    </h2>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div className="card p-6">
+                            <div className="text-4xl font-bold gradient-text mb-4">01</div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Research</h3>
+                            <p className="text-muted text-sm">Rigorous quantitative research using historical data and forward testing.</p>
+                        </div>
+                        <div className="card p-6">
+                            <div className="text-4xl font-bold gradient-text mb-4">02</div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Development</h3>
+                            <p className="text-muted text-sm">Strategy implementation with robust risk controls and execution logic.</p>
+                        </div>
+                        <div className="card p-6">
+                            <div className="text-4xl font-bold gradient-text mb-4">03</div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Testing</h3>
+                            <p className="text-muted text-sm">Extensive backtesting, paper trading, and stress testing.</p>
+                        </div>
+                        <div className="card p-6">
+                            <div className="text-4xl font-bold gradient-text mb-4">04</div>
+                            <h3 className="text-xl font-semibold text-text-primary mb-2">Deployment</h3>
+                            <p className="text-muted text-sm">Careful capital allocation with continuous monitoring and optimization.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Risk Disclaimer -->
+                <div className="mt-16 p-6 bg-bg-tertiary rounded-xl border border-themed animate-fade-in-up">
+                    <div className="flex items-start gap-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent flex-shrink-0 mt-1">
+                            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                        </svg>
+                        <div>
+                            <h4 className="text-lg font-semibold text-text-primary mb-2">Risk Disclosure</h4>
+                            <p className="text-muted text-sm leading-relaxed">
+                                Past performance is not indicative of future results. All investments involve risk, including the possible loss of principal. The strategies described above are speculative and may not be suitable for all investors. Please review our Risk Disclosure Statement for complete information.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-themed bg-secondary">
+        <div class="border-b border-themed">
+            <div class="mx-auto grid max-w-screen-2xl gap-6 px-6 py-8 md:grid-cols-4 md:px-8">
+                <div class="text-center md:text-left">
+                    <div class="text-sm uppercase tracking-[0.14em] text-muted">Coverage</div>
+                    <div class="mt-2 text-xl font-bold text-accent">Global Markets</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-sm uppercase tracking-[0.14em] text-muted">Execution</div>
+                    <div class="mt-2 text-xl font-bold text-accent">Quantitative</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-sm uppercase tracking-[0.14em] text-muted">Risk</div>
+                    <div class="mt-2 text-xl font-bold text-accent">Disciplined</div>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="text-sm uppercase tracking-[0.14em] text-muted">Mandate</div>
+                    <div class="mt-2 text-xl font-bold text-accent">Long-Term Alpha</div>
+                </div>
+            </div>
+        </div>
+        <div class="mx-auto max-w-screen-2xl px-6 py-14 md:px-8">
+            <div class="grid gap-10 lg:grid-cols-6">
+                <div class="lg:col-span-2">
+                    <a class="inline-flex items-center gap-3" href="/">
+                        <div class="flex size-11 items-center justify-center rounded-lg bg-gradient-to-br from-accent-primary to-accent-secondary text-base font-bold text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 7h6v6"></path>
+                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="block text-sm font-bold tracking-[0.12em] text-text-primary leading-tight">TITAN</span>
+                            <span class="block text-sm font-bold tracking-[0.12em] text-text-primary leading-tight">QUANTUM</span>
+                            <span class="block text-sm font-bold tracking-[0.12em] text-text-primary leading-tight">TRADING</span>
+                        </div>
+                    </a>
+                    <p class="mt-6 max-w-md text-sm leading-relaxed text-muted">
+                        Titan Quantum Trading engineers alpha through precision, data, and disciplined execution
+                        across global markets.
+                    </p>
+                    <div class="mt-8 space-y-3 text-sm text-muted">
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+                                <path d="M2 12h20"></path>
+                            </svg>
+                            <span>Dublin, Ireland</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
+                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                            </svg>
+                            <span>mail2me.barath@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 flex gap-4">
+                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-themed bg-bg-tertiary text-text-secondary transition-all hover:border-accent hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-themed bg-bg-tertiary text-text-secondary transition-all hover:border-accent hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="flex h-10 w-10 items-center justify-center rounded-lg border border-themed bg-bg-tertiary text-text-secondary transition-all hover:border-accent hover:text-accent">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.16em] text-text-secondary">Company</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a class="footer-link" href="/about" onclick="loadPage('about'); return false;">About Us</a></li>
+                        <li><a class="footer-link" href="/strategies" onclick="loadPage('strategies'); return false;">Strategies</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.16em] text-text-secondary">Support</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a class="footer-link" href="#">Help Center</a></li>
+                        <li><a class="footer-link" href="#">Contact Us</a></li>
+                        <li><a class="footer-link" href="#">API Documentation</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.16em] text-text-secondary">Legal</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a class="footer-link" href="#">Terms of Service</a></li>
+                        <li><a class="footer-link" href="#">Privacy Policy</a></li>
+                        <li><a class="footer-link" href="#">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-[0.16em] text-text-secondary">Mission</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li class="flex items-center gap-2 text-sm text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path d="M16 7h6v6"></path>
+                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                            </svg>
+                            <span>Dominate volatility.</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path d="M16 7h6v6"></path>
+                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                            </svg>
+                            <span>Protect capital.</span>
+                        </li>
+                        <li class="flex items-center gap-2 text-sm text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                                <path d="M16 7h6v6"></path>
+                                <path d="m22 7-8.5 8.5-5-5L2 17"></path>
+                            </svg>
+                            <span>Compound intelligently.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 flex flex-col gap-4 border-t border-themed pt-6 text-sm text-muted md:flex-row md:items-center md:justify-between">
+                <div class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent">
+                        <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+                    </svg>
+                    <span>Past performance does not guarantee future results. Trading involves risk.</span>
+                </div>
+                <span>© 2026 Titan Quantum Trading. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
